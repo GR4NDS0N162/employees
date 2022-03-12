@@ -9,19 +9,17 @@ namespace Employees
 	abstract partial class Employee
 	{
 		#region Поля
-
 		protected string _name;
 		protected int _id;
 		protected int _age;
 		protected float _pay;
 		protected string _ssn;
 		protected BenefitPackage _benefits = new BenefitPackage();
-
 		#endregion
 
 		#region Конструкторы
-
 		public Employee() { }
+
 		public Employee(string name, int age, int id, float pay, string ssn)
 		{
 			Name = name;
@@ -33,7 +31,6 @@ namespace Employees
 			else
 				_ssn = ssn;
 		}
-
 		#endregion
 	}
 }

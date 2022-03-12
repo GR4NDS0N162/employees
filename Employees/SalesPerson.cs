@@ -10,13 +10,10 @@ namespace Employees
 	class SalesPerson : Employee
 	{
 		#region Поля
-
 		protected int _salesNumber;
-
 		#endregion
 
 		#region Свойства
-
 		public int SalesNumber
 		{
 			get { return _salesNumber; }
@@ -28,22 +25,19 @@ namespace Employees
 					_salesNumber = value;
 			}
 		}
-
 		#endregion
 
 		#region Конструкторы
-
 		public SalesPerson() { }
+
 		public SalesPerson(string name, int age, int id, float pay, string ssn, int numOfSales)
 			: base(name, age, id, pay, ssn)
 		{
 			SalesNumber = numOfSales;
 		}
-
 		#endregion
 
 		#region Методы
-
 		public override sealed void GiveBonus(float amount)
 		{
 			int salesBonus;
@@ -63,7 +57,6 @@ namespace Employees
 			base.DisplayStats();
 			Console.WriteLine($"Number of Sales: {SalesNumber}");
 		}
-
 		#endregion
 	}
 }

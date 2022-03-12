@@ -10,6 +10,8 @@ namespace Employees
 	{
 		static void Main(string[] args)
 		{
+			var consoleUserInterface = new ConsoleUserInterface();
+			consoleUserInterface.Run();
 		}
 	}
 }

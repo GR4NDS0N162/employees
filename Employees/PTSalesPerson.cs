@@ -10,11 +10,10 @@ namespace Employees
 	sealed class PTSalesPerson : SalesPerson
 	{
 		#region Конструкторы
-
 		public PTSalesPerson() { }
+
 		public PTSalesPerson(string name, int age, int id, float pay, string ssn, int numOfSales)
 			: base(name, age, id, pay, ssn, numOfSales) { }
-
 		#endregion
 	}
 }
